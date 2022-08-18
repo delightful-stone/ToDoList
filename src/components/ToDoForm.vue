@@ -5,9 +5,6 @@
 结果: App.vue调用 addToDo ()方法将新的 todo 项添加到 ToDoItems 数组。-->
 <template>
   <form @submit.prevent="onSubmit">
-    <h2 class="label-wrapper">
-      <label for="new-todo-item" class="label__lg">What needs to be done?</label>
-    </h2>
     <input
       type="text"
       id="new-todo-item"
@@ -15,6 +12,7 @@
       autocomplete="off"
       v-model.lazy.trim="label"
       class="input__lg"
+      placeholder="What needs to be done?"
     />
     <button type="submit" class="btn btn__primary btn__lg">Add</button>
   </form>

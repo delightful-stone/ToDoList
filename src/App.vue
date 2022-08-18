@@ -1,5 +1,5 @@
 <template>
-  <h1>DLY To-Do List</h1>
+  <h1>To-Do List</h1>
   <to-do-form @todo-added="addToDo"></to-do-form>
   <!--tabIndex=-1表示默认情况下不焦距-->
   <h2 id="list-summary" ref="listSummary" tabindex="-1">{{ listSummary }}</h2>
@@ -76,6 +76,7 @@ export default {
   border: 0.2rem solid #4d4d4d;
   cursor: pointer;
   text-transform: capitalize;
+  border-radius: 10px;
 }
 .btn__danger {
   color: #fff;
